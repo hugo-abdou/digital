@@ -13,7 +13,7 @@
 			<div class="flex justify-between items-center py-2 whitespace-nowrap">
 				<!-- logo -->
 				<a href="/">
-					<span class="sr-only">My Digital Self</span>
+					<span class="sr-only">Digital Self</span>
 					<img src="../assets/Digital Self.png" alt="dijital self logo" />
 				</a>
 
