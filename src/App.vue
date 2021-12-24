@@ -1,5 +1,7 @@
 <template>
-	<hero />
+	<div class="box-border font-nunito bg-gray-50">
+		<hero />
+	</div>
 </template>
 
 <script>
