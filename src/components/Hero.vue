@@ -1,17 +1,17 @@
 <template>
 	<!-- hero section -->
-	<div class="relative h-screen">
+	<div class="relative">
 		<img
 			src="../assets/Rectangle.png"
 			alt="Rectangle photo"
 			class="absolute h-full w-full object-cover object-top"
 		/>
 		<!-- overlay -->
-		<div class="absolute bg-gradient-to-r from-black/90 to-black/20 inset-0"></div>
+		<div class="absolute bg-gradient-to-r from-[#000]/70 to-[#000]/20 inset-0"></div>
 
-		<div class="relative z-10 container mx-auto">
+		<div class="relative z-10 container mx-auto p-9">
 			<!-- navigation -->
-			<div class="flex justify-between items-center py-2 whitespace-nowrap">
+			<div class="flex justify-between items-center whitespace-nowrap">
 				<!-- logo -->
 				<a href="/">
 					<span class="sr-only">Digital Self</span>
@@ -19,25 +19,19 @@
 				</a>
 
 				<!-- nav links -->
-				<nav class="hidden xl:flex justify-center items-center space-x-5 text-white py-4">
-					<a href="#">Pricing</a>
-
+				<nav class="hidden 2xl:flex justify-center items-center space-x-5 text-white text-p-sm py-4">
 					<a href="#">Manage Group</a>
-
 					<a href="#">Control Your Career</a>
-
 					<a href="#">Lead challenges</a>
-
 					<a href="#">upcoming challenges</a>
-
 					<a href="#">support</a>
 				</nav>
 
-				<div class="text-white space-x-5 items-center flex">
+				<div class="text-white text-p-sm space-x-5 items-center flex">
 					<button
-						class="border border-d-yellow hover:bg-d-yellow rounded-full px-3 pb-0.5 hidden lg:block"
+						class="border border-d-yellow hover:bg-d-yellow rounded-full px-6 py-2 hidden lg:block"
 					>free sign-up</button>
-					<button class="border border-d-yellow hover:bg-d-yellow rounded-full px-3 pb-0.5">login</button>
+					<button class="border border-d-yellow hover:bg-d-yellow rounded-full px-6 py-2">login</button>
 
 					<button type="button" class="text-d-yellow lg:hidden" aria-expanded="false">
 						<span class="sr-only">Open menu</span>
@@ -62,17 +56,11 @@
 			</div>
 			<!-- nav links for medium desplay -->
 
-			<nav class="hidden md:flex xl:hidden items-center space-x-5 text-white m-4">
-				<a href="#">Pricing</a>
-
+			<nav class="hidden md:flex 2xl:hidden items-center space-x-5 text-white my-4">
 				<a href="#">Manage Group</a>
-
 				<a href="#">Control Your Career</a>
-
 				<a href="#">Lead challenges</a>
-
 				<a href="#">upcoming challenges</a>
-
 				<a href="#">support</a>
 			</nav>
 
@@ -128,46 +116,53 @@
 					</div>
 				</div>
 			</div>
+
 			<!-- hero content -->
-			<div class="flex mt-4 px-10 h-[calc(100vh-146px)] xl:h-[calc(100vh-100px)]">
+			<div class="flex my-32">
 				<!-- description -->
-				<div class="text-white w-full md:w-1/2 flex justify-center items-center">
-					<div class="space-y-8 w-[500px]">
-						<h1 class="font-semibold text-4xl">
+				<div class="text-white w-full lg:w-1/2 flex justify-center items-center">
+					<div class="space-y-8 w-[681px]">
+						<h1 class="font-medium text-h2 md:text-h1">
 							Discover The True Potential Of You And Your People
 							<span class="text-d-yellow">Remotely</span> !
 						</h1>
-						<p
-							class="text-[18px]"
-						>Do you want a way to easily manage, understand and engage your group remotely ? to create awesome challenges for them? A way to take control of your career ?</p>
+						<p class="text-p-sm md:text-p">
+							Do you want a way to easily
+							<b class="underline">manage</b>,
+							<b class="underline">understand</b> and
+							<b class="underline">engage</b> your group remotely ? to create awesome
+							<b class="underline">challenges</b> for them? A way to take
+							<b class="underline">control</b> of your career ?
+						</p>
 
-						<button class="border bg-white text-d-yellow rounded-full px-3 pb-0.5">Free Consultation</button>
+						<button
+							class="border bg-white text-d-yellow text-p-sm md:text-p rounded-full px-12 py-4"
+						>Free Consultation</button>
 					</div>
 				</div>
 
 				<!-- dashboard -->
-				<div class="hidden md:flex w-1/2 justify-center items-end">
-					<img src="../assets/Template-Flat-Presentation.png" class="w-[564px] mb-20" />
+				<div class="hidden lg:flex w-1/2 justify-center items-end">
+					<img src="../assets/Template-Flat-Presentation.png" class="mb-20" />
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- why hiring us -->
-	<div class="flex flex-col lg:flex-row bg-gray-100">
-		<div class="w-full lg:w-1/2 h-[calc(100vh/2)] lg:h-screen relative">
-			<div class="bg-d-yellow h-1/2 w-full lg:h-full lg:w-1/2"></div>
-			<div class="absolute top-0 w-full h-full flex justify-center items-center">
-				<img src="../assets/Rectangle68.png" alt="why hiring us image" class="h-4/5" />
-			</div>
+	<div class="relative flex flex-col lg:flex-row bg-gray-lv-1 px-10">
+		<div class="bg-d-yellow absolute left-0 w-full lg:w-1/4 h-1/4 lg:h-auto lg:inset-y-0"></div>
+		<div class="relative w-full lg:w-1/2 flex justify-center items-center mt-20 lg:mt-0">
+			<img src="../assets/Rectangle68.png" alt="why hiring us image" />
 		</div>
-		<div class="flex justify-center items-center lg:w-1/2 px-10 mt-5">
+
+		<div class="flex justify-center items-center lg:w-1/2 py-28">
 			<div class="pb-10">
 				<div>
-					<h3 class="text-4xl">Why Hiring Us</h3>
+					<h3 class="text-p md:text-h2">Why Hiring Us</h3>
 					<span class="bg-d-yellow ml-2 h-1.5 w-5 rounded-l-md inline-block"></span>
 					<span class="bg-d-yellow ml-4 h-1.5 w-20 rounded-r-md inline-block"></span>
 				</div>
-				<h4 class="text-2xl mt-8">
+				<h4 class="text-p-sm md:text-p mt-8">
 					You are accountable for knowing the information needed to
 					stay connected with your professional
 					<span
@@ -175,7 +170,7 @@
 					>community</span>
 					as well as with your own professional self!
 				</h4>
-				<p class="mt-8">
+				<p class="mt-8 text-p-xs md:text-p-sm">
 					In addition to
 					<b>productivity</b> and
 					<b>morale</b>, the strength of the
@@ -183,35 +178,35 @@
 					can impact
 					<b>how team members view their value</b> in your organization.
 				</p>
-				<p class="mt-2">
+				<p class="mt-2 text-p-xs md:text-p-sm">
 					If there is
 					<b>not a strong connection</b>, there's a good chance members will not feel
 					connected to leadership or the organization, which can ultimately
 					<b>lead a high turnover rate</b>!
 				</p>
 				<button
-					class="border-2 font-semibold bg-gray-900 text-white rounded-full px-3 mt-8 py-0.5"
+					class="border-2 font-semibold bg-black text-white text-p-xs md:text-p-sm rounded-full mt-8 px-12 py-4"
 				>Free Consultation</button>
 			</div>
 		</div>
 	</div>
 	<!-- What we Offer -->
-	<div class="flex flex-col lg:flex-row p-10 container mx-auto">
+	<div class="flex flex-col lg:flex-row container mx-auto px-9 mt-28">
 		<div class="flex justify-center items-center lg:w-1/2 mt-5">
 			<div class="pb-10 text-center lg:text-left">
-				<h3 class="text-4xl">What we Offer</h3>
+				<h3 class="text-p md:text-h2">What we Offer</h3>
 				<span class="bg-d-yellow ml-2 h-1.5 w-5 rounded-l-md inline-block"></span>
 				<span class="bg-d-yellow ml-4 h-1.5 w-20 rounded-r-md inline-block"></span>
 
-				<h4 class="text-2xl mt-8">You Need A Way to Become and Remain Engaged!</h4>
+				<h4 class="text-p-sm md:text-p mt-8">You Need A Way to Become and Remain Engaged!</h4>
 				<h4
-					class="text-2xl mt-8 text-d-yellow"
+					class="text-p mt-8 text-d-yellow"
 				>How Well Do You Really Know Your Team? How Self Aware Are You?</h4>
-				<p class="mt-8">
+				<p class="mt-8 text-p-xs md:text-p-sm">
 					The world is changing... we don't get to interact with our teams, partners and groups in familiar ways
 					With more highly distributed teams of both nationally & worldwide,
 				</p>
-				<p class="mt-2">
+				<p class="mt-2 text-p-xs md:text-p-sm">
 					<b>
 						the need to know your people to drive
 						optimal performance is critical to success.
@@ -223,16 +218,18 @@
 			<img src="../assets/offer.png" alt="why hiring us image" />
 		</div>
 	</div>
-	<div class="flex flex-wrap justify-center gap-4 py-10">
-		<div class="bg-white relative shadow-md border overflow-hidden rounded-lg p-8 group">
+	<div class="flex flex-wrap justify-center gap-4 mt-20">
+		<div
+			class="bg-white relative max-w-[355px] shadow-lg border overflow-hidden rounded-lg px-7 py-8 group"
+		>
 			<div class="flex items-center">
 				<img src="../assets/manage teams remotly.png" alt="manage teams remotly" />
-				<h4 class="text-xl font-semibold w-40 ml-4">
+				<h4 class="text-p font-semibold ml-3">
 					Manage Teams
 					Remotely
 				</h4>
 			</div>
-			<ul class="mt-4 list-disc w-60 mx-auto text-gray-600">
+			<ul class="mt-9 px-2.5 list-disc text-gray-600 font-normal text-p-sm">
 				<li class>Know who embraces the culture</li>
 				<li>Identify the best for task delegation</li>
 				<li>Understand a teams' diverse voice</li>
@@ -244,12 +241,14 @@
 			</ul>
 			<span class="absolute bottom-0 inset-x-0 bg-[#A65511] h-2 hidden group-hover:block"></span>
 		</div>
-		<div class="bg-white relative shadow-md border overflow-hidden rounded-lg p-8 group">
+		<div
+			class="bg-white relative max-w-[355px] shadow-lg border overflow-hidden rounded-lg px-7 py-8 group"
+		>
 			<div class="flex items-center">
 				<img src="../assets/control your career.png" alt="control your career" />
 				<h4 class="text-xl font-semibold w-40 ml-4">Control Your Career</h4>
 			</div>
-			<ul class="mt-4 list-disc w-60 mx-auto text-gray-600">
+			<ul class="mt-9 px-2.5 list-disc text-gray-600 font-normal text-p-sm">
 				<li>Gain a tool to build camaraderie</li>
 				<li>Encourage remote team building</li>
 				<li>Creates healthy competition</li>
@@ -259,12 +258,14 @@
 			</ul>
 			<span class="absolute bottom-0 inset-x-0 bg-[#A65511] h-2 hidden group-hover:block"></span>
 		</div>
-		<div class="bg-white relative shadow-md border overflow-hidden rounded-lg p-8 group">
+		<div
+			class="bg-white relative max-w-[355px] shadow-lg border overflow-hidden rounded-lg px-7 py-8 group"
+		>
 			<div class="flex items-center">
 				<img src="../assets/control your career.png" alt="Lead Powerful Challenges" />
 				<h4 class="text-xl font-semibold w-40 ml-4">Lead Powerful Challenges</h4>
 			</div>
-			<ul class="mt-4 list-disc w-60 mx-auto text-gray-600">
+			<ul class="mt-9 px-2.5 list-disc text-gray-600 font-normal text-p-sm">
 				<li>Know who embraces the culture</li>
 				<li>Identify the best for task delegation</li>
 				<li>Understand a teams' diverse voice</li>
@@ -277,92 +278,92 @@
 		</div>
 	</div>
 	<!-- upcoming changes -->
-	<div class="container mx-auto px-10">
+	<div class="container mx-auto mt-24 px-9">
 		<div>
-			<h3 class="text-4xl">Upcoming Challenges</h3>
+			<h3 class="text-p md:text-h2">Upcoming Challenges</h3>
 			<span class="bg-d-yellow ml-2 h-1.5 w-5 rounded-l-md inline-block"></span>
 			<span class="bg-d-yellow ml-4 h-1.5 w-20 rounded-r-md inline-block"></span>
 		</div>
-		<div class="flex flex-wrap justify-center gap-4 py-10">
-			<div class="bg-white relative shadow-md border overflow-hidden rounded-lg group max-w-[350px]">
+		<div class="flex flex-wrap justify-center gap-4 pt-16 pb-44">
+			<div class="bg-white relative shadow-lg border overflow-hidden rounded-lg group max-w-[250px]">
 				<div class="w-full">
 					<img src="../assets/books.jpg" class="aspect-video w-full" alt />
 				</div>
 				<div class="p-4">
 					<div>
-						<span class="text-sm text-gray-500">category :</span>
-						<h4>Challenge title here: some random text</h4>
+						<span class="text-p-xs text-gray-500">category :</span>
+						<h4 class="text-p-sm">Challenge title here: some random text</h4>
 					</div>
-					<div class="mt-4">
-						<span class="text-sm text-gray-500">Start on :</span>
-						<h4>Sep 15, 17:00AM USA</h4>
+					<div class="mt-6">
+						<span class="text-p-xs text-gray-500">Start on :</span>
+						<h4 class="text-p-sm">Sep 15, 17:00AM USA</h4>
 					</div>
 
-					<button class="mt-4 bg-d-yellow text-white px-5 py-2 rounded-lg">Request challenge</button>
+					<button class="mt-6 bg-d-yellow text-white px-8 py-2 rounded-lg">Request challenge</button>
 				</div>
 			</div>
-			<div class="bg-white relative shadow-md border overflow-hidden rounded-lg group max-w-[350px]">
+			<div class="bg-white relative shadow-lg border overflow-hidden rounded-lg group max-w-[250px]">
 				<div class="w-full">
 					<img src="../assets/image61.png" class="aspect-video w-full" alt />
 				</div>
 				<div class="p-4">
 					<div>
-						<span class="text-sm text-gray-500">category :</span>
-						<h4>Challenge title here: some random text</h4>
+						<span class="text-p-xs text-gray-500">category :</span>
+						<h4 class="text-p-sm">Challenge title here: some random text</h4>
 					</div>
-					<div class="mt-4">
-						<span class="text-sm text-gray-500">Start on :</span>
-						<h4>Sep 15, 17:00AM USA</h4>
+					<div class="mt-6">
+						<span class="text-p-xs text-gray-500">Start on :</span>
+						<h4 class="text-p-sm">Sep 15, 17:00AM USA</h4>
 					</div>
 
-					<button class="mt-4 bg-d-yellow text-white px-5 py-2 rounded-lg">Request challenge</button>
+					<button class="mt-6 bg-d-yellow text-white px-8 py-2 rounded-lg">Request challenge</button>
 				</div>
 			</div>
-			<div class="bg-white relative shadow-md border overflow-hidden rounded-lg group max-w-[350px]">
+			<div class="bg-white relative shadow-lg border overflow-hidden rounded-lg group max-w-[250px]">
 				<div class="w-full">
 					<img src="../assets/image62.png" class="aspect-video w-full" alt />
 				</div>
 				<div class="p-4">
 					<div>
-						<span class="text-sm text-gray-500">category :</span>
-						<h4>Challenge title here: some random text</h4>
+						<span class="text-p-xs text-gray-500">category :</span>
+						<h4 class="text-p-sm">Challenge title here: some random text</h4>
 					</div>
-					<div class="mt-4">
-						<span class="text-sm text-gray-500">Start on :</span>
-						<h4>Sep 15, 17:00AM USA</h4>
+					<div class="mt-6">
+						<span class="text-p-xs text-gray-500">Start on :</span>
+						<h4 class="text-p-sm">Sep 15, 17:00AM USA</h4>
 					</div>
 
-					<button class="mt-4 bg-d-yellow text-white px-5 py-2 rounded-lg">Request challenge</button>
+					<button class="mt-6 bg-d-yellow text-white px-8 py-2 rounded-lg">Request challenge</button>
 				</div>
 			</div>
-			<div class="bg-white relative shadow-md border overflow-hidden rounded-lg group max-w-[350px]">
+			<div class="bg-white relative shadow-lg border overflow-hidden rounded-lg group max-w-[250px]">
 				<div class="w-full">
 					<img src="../assets/image63.png" class="aspect-video w-full" alt />
 				</div>
 				<div class="p-4">
 					<div>
-						<span class="text-sm text-gray-500">category :</span>
-						<h4>Challenge title here: some random text</h4>
+						<span class="text-p-xs text-gray-500">category :</span>
+						<h4 class="text-p-sm">Challenge title here: some random text</h4>
 					</div>
-					<div class="mt-4">
-						<span class="text-sm text-gray-500">Start on :</span>
-						<h4>Sep 15, 17:00AM USA</h4>
+					<div class="mt-6">
+						<span class="text-p-xs text-gray-500">Start on :</span>
+						<h4 class="text-p-sm">Sep 15, 17:00AM USA</h4>
 					</div>
 
-					<button class="mt-4 bg-d-yellow text-white px-5 py-2 rounded-lg">Request challenge</button>
+					<button class="mt-6 bg-d-yellow text-white px-8 py-2 rounded-lg">Request challenge</button>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- testimenials -->
-	<div class="bg-gray-200 p-10 pb-24">
+	<div class="bg-gray-lv-1 pb-44 pt-12">
 		<div class="container mx-auto">
 			<div class="text-center">
-				<h3 class="text-4xl">Testimenials</h3>
+				<h3 class="text-p md:text-h2">Testimenials</h3>
 				<span class="bg-d-yellow ml-2 h-1.5 w-5 rounded-l-md inline-block"></span>
 				<span class="bg-d-yellow ml-4 h-1.5 w-20 rounded-r-md inline-block"></span>
 			</div>
-			<div class="flex items-center overflow-x-auto justify-start lg:justify-center gap-4 mt-10">
+			<div class="flex items-center overflow-x-auto p-5 justify-start lg:justify-center gap-4 mt-10">
 				<div class="bg-white shadow-md rounded-lg p-8 flex-shrink-0 max-w-[350px]">
 					<div class="flex items-center">
 						<img src="../assets/image62.png" class="w-16 h-16 rounded-full shadow" alt="avatar" />
@@ -371,7 +372,7 @@
 							<span class="block text-sm text-gray-500">Founder & SEO</span>
 						</div>
 					</div>
-					<div class="mt-4">
+					<div class="mt-6">
 						<p
 							class="text-gray-600 text-xl"
 						>Lorem ipsum is simply free text dolor sit amet, consetur notted adipisic elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -385,7 +386,7 @@
 							<span class="block text-sm text-gray-500">Founder & SEO</span>
 						</div>
 					</div>
-					<div class="mt-4">
+					<div class="mt-6">
 						<p
 							class="text-gray-600 text-xl"
 						>Lorem ipsum is simply free text dolor sit amet, consetur notted adipisic elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -399,7 +400,7 @@
 							<span class="block text-sm text-gray-500">Founder & SEO</span>
 						</div>
 					</div>
-					<div class="mt-4">
+					<div class="mt-6">
 						<p
 							class="text-gray-600 text-xl"
 						>Lorem ipsum is simply free text dolor sit amet, consetur notted adipisic elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -409,7 +410,7 @@
 		</div>
 	</div>
 	<!-- your signature program -->
-	<div class="p-10 pb-24 relative hidden lg:block">
+	<div class="pb-24 pt-24 relative hidden lg:block">
 		<div class="text-center">
 			<h3 class="text-4xl">Your Singnature Program</h3>
 			<span class="bg-d-yellow ml-2 h-1.5 w-5 rounded-l-md inline-block"></span>

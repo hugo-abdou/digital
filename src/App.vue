@@ -1,5 +1,5 @@
 <template>
-	<div class="box-border font-nunito bg-gray-50">
+	<div class="box-border font-nunito">
 		<hero />
 	</div>
 </template>
